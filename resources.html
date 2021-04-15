@@ -260,6 +260,12 @@ function myFunction2() {
                     <td>01-Apr-2021</td>
                     <td class="count-me">12500</td>
                   </tr>
+				  <tr>
+                    <td>8</td>
+                    <td>15-Apr-2021</td>
+                    <td>15-Apr-2021</td>
+                    <td>22100 (FEES DEDUCTION)</td>
+                  </tr>
                 </tbody>
               </table>
              <script language="javascript" type="text/javascript">
@@ -270,11 +276,83 @@ function myFunction2() {
                     sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
                 }
             }
+			sum=sum-22100;
             document.getElementById('countit').innerHTML += '<tr><td></td><td><strong>Total :</strong></td><td></td><td><strong>' + sum + '</strong></td></tr>';
         </script>
+		</section>
+        </article>
+		 
+      </div>
 		<br>
 		<br>
-		<section class="card">
+		
+	  <div class="content">
+        <!-- Card -->
+        <article class="card card-cascade narrower">
+          <!-- Card heading -->
+          <section class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-center align-items-center">
+            <span class="white-text mx-3">FEES PAYMENT STATUS</span>
+          </section>
+
+          <!-- Card content -->
+          <section class="px-4">
+            <!-- Table -->
+            <section class="table-wrapper">
+              <table class="table table-hover mb-0" id="countit">
+                <thead>
+                  <tr>
+                    <th class="th-md">
+                      <a href="">Sl no.
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
+                    </th>
+                    <th class="th-md">
+                      <a href="">SEMESTER
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
+                    </th>
+                    <th class="th-md">
+                      <a href="">MODE
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
+                    </th>
+					<th class="th-md">
+                      <a href="">DATE
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
+                    </th>
+                    <th class="th-md">
+                      <a href="">Amount(in INR.)
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
+                    </th>
+					<th class="th-md">
+                      <a href="">BALANCE AMOUNT (in INR.)
+                        <i class="fa fa-sort ml-1"></i>
+                      </a>
+                    </th>
+                    
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2nd</td>
+                    <td>Stipend Deduction</td>
+					<td>15-04-2021</td>
+                    <td class="count-me">22100</td>
+					<td>65400</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+			  <br>
+		<br>
+		<h4 style="color:red"><blink> *THE BALANCE STIPEND AMOUNT WILL BE CREDITED TO YOUR REGISTERED BANK ACCOUNT ONCE THE ADMINISTRATION STARTS THE <strong>STIPEND CREDIT PROCEDURE.</strong></blink></h2>
+		 <br>
+		<br>
+			  <section class="card">
                 <section class="view overlay p-3 text-center">
                   <h6 class="indigo-text darken-4">
                     <i class="fas fa-sticky-note"></i>
@@ -284,7 +362,7 @@ function myFunction2() {
                   <a class="btn btn-indigo" role="button" target="_blank" onclick="myFunction3()">Pay</a>
 				  <script>
 function myFunction3() {
-  alert("UNAVAILABLE!");
+  alert("FEES PAID!");
 }
 </script>
                 </section>
@@ -293,6 +371,7 @@ function myFunction3() {
         </article>
 		 
       </div>
+		
 
       <!-- Bootstrap dependencies -->
       <!-- First jQuery, then Popper.js and lastly Bootstrap JS -->
