@@ -16,7 +16,7 @@ loginButton.addEventListener("click", (e) => {
         loginErrorMsg.style.opacity = 1;
     }
 })
-var blink = document.getElementById('blinka');
+var blink = document.getElementById('login-header');
         setInterval(function() {
             blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-        }, 700);
+        }, 500);

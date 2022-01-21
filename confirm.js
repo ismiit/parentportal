@@ -13,7 +13,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (adm === "20GA0013" && reg === "MT20D41008" && course === "mt" && br === "cse" && sem === "4" ) {
         alert("You have succesfully paid fees for Semester 4.");
-        window.location.href = "./home.html";
+        window.location.href = "./thankyou.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
