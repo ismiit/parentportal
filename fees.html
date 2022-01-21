@@ -247,16 +247,28 @@ function myFunction2() {
                     <td>4th - winter(2nd year)</td>
                     <td>18,300/- *</td>
                     <td class="count-me">3,300/- *</td>
-					<td><strong>-</strong></td>
-					<td>-</td>
+					<td><strong>PAID</strong></td>
+					<td><strong>20GA00013ST793MRB59</strong></td>
                   </tr>
                   
                 </tbody>
               </table> </section>
               </section>
             </section>
+			
         </article>
-		
+		<section class="card">
+                <section class="view overlay p-3 text-center">
+                  <h6 class="indigo-text darken-4">
+                    <i class="fas fa-sticky-note"></i>
+                    RECEIPTS
+                  </h6>
+                  <p class="card-text">Find payment receipts of all semester</p>
+                  <a class="btn btn-indigo" role="button" target="_blank" href="./thankyou.html">SEARCH</a>
+				  
+
+                </section>
+              </section>
 		 
       </div>
 		  <section class="view gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-center align-items-center">
@@ -406,7 +418,7 @@ function myFunction3() {
                   <a class="btn btn-indigo" role="button" target="_blank" onclick="myFunction4()">CHECK</a>
 				  <script>
 function myFunction4() {
-  alert("UNAVAILABLE !");
+  alert("FEES PAID ALREADY!");
 }
 </script>
 
@@ -419,7 +431,7 @@ function myFunction4() {
                     RECEIPT
                   </h6>
                   <p class="card-text">Download your fees reciept here</p>
-                  <a class="btn btn-indigo" role="button" target="_blank">Download</a>
+                  <a class="btn btn-indigo" role="button" target="_blank" href="./img/s4.pdf">Download</a>
                 </section>
               </section>
 			  
@@ -430,7 +442,12 @@ function myFunction4() {
                     PAY HERE
                   </h6>
                   <p class="card-text">Pay your fees</p>
-                  <a class="btn btn-indigo" role="button" target="_blank" href="./payment.html">PAY</a>
+                  <a class="btn btn-indigo" role="button" target="_blank" onclick="myFunction4()">PAY</a>
+				  <script>
+function myFunction4() {
+  alert("FEES PAID ALREADY!");
+}
+</script>
                 </section>
               </section>
             </section>
