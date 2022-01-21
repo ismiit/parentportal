@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation Page</title>
+  
+  <link rel="stylesheet" href="confirm.css">
+  <script defer src="confirm.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <img src="./img/newlogo.png" alt="IIT(ISM)" style="width:500px;height:150px;">
+    <h1 id="login-header" >CONFIRMATION PAGE</h1>
+	
+   <form  id="login-form">
+  <label for="fname" id="inp">First Name</label>
+  <input type="text" id="fname" name="fullname" placeholder="Your full name.."><br>
+
+  <label for="birthday">Date Of Birth:</label>
+  <input type="date" id="birthday" name="birthday">
+  
+   <label for="anum" id="inp">Admission No.</label>
+  <input type="text" id="anum" name="admission" placeholder="Admission Number.."><br>
+  
+  <label for="fname" id="inp">Current Semester Reg. ID</label>
+  <input type="text" id="fname" name="registration" placeholder="Registration ID.."><br>
+
+  <label for="course" id="inp">Course</label>
+  <select id="course" name="course">
+    <option value="bt">B Tech</option>
+    <option value="mt">M Tech</option>
+    <option value="phd">PhD</option>
+	<option value="intbt">Integrated B Tech M tech</option>
+    <option value="mtt">3 year M Tech</option>
+    <option value="mba">MBA</option>
+	<option value="msc">M sc.</option>
+    <option value="msct">Msc. M Tech</option>
+  </select>
+  
+  
+  <label for="branch" id="inp">Branch</label>
+  <select id="branch" name="branch">
+    <option value="agy">APPLIED GEOLOGY</option>
+    <option value="agphy">APPLIED GEOPHYSICS</option>
+    <option value="che">CHEMICAL ENGINEERING</option>
+	<option value="ce">CIVIL ENGINEERING</option>
+    <option value="chy">CHEMISTRY</option>
+    <option value="cse">COMPUTER SCIENCE & ENGINEERING</option>
+	<option value="eee">ELECTRICAL ENGINEERING</option>
+    <option value="ece">ELECTRONICS ENGINEERING</option>
+	<option value="ese">ENVIRONMENTAL SCIENCE & ENGINEERING</option>
+    <option value="fmm">FUEL, MINERAL AND METALLURGICAL ENGINEERING</option>
+    <option value="hs">HUMANITIES & SOCIAL SCIENCE</option>
+	<option value="ms">MANAGEMENT STUDIES</option>
+    <option value="mc">MATHEMATICS & COMPUTING</option>
+    <option value="me">MECHANICAL ENGINEERING</option>
+	<option value="mie">MINING ENGINEERING</option>
+    <option value="mme">MINING MACHINERY ENGINEERING</option>
+	<option value="pe">PETROLEUM ENGINEERING</option>
+    <option value="phy">PHYSICS</option>
+  </select>
+  
+  
+  <label for="sem" id="inp">Semester</label>
+  <select id="sem" name="sem">
+    <option value="1">1st</option>
+    <option value="2">2nd</option>
+    <option value="3">3rd</option>
+	<option value="4">4th</option>
+    <option value="5">5th</option>
+    <option value="6">6th</option>
+	<option value="7">7th</option>
+    <option value="8">8th</option>
+	<option value="9">9th</option>
+    <option value="10">10th</option>
+	 <option value="11">11th</option>
+    <option value="12">12th</option>
+    <option value="13">13th</option>
+	<option value="14">14th</option>
+    <option value="15">15th</option>
+    <option value="16">16th</option>
+	<option value="17">17th</option>
+    <option value="18">18th</option>
+	<option value="19">19th</option>
+    <option value="20">20th</option>
+  </select>
+
+  <input type="button" value="CONFIRM" onclick="./index.html" id="login-form-submit">
+</form>
+<div id="login-error-msg-holder">
+      <p id="login-error-msg">INVALID DETAILS <span id="error-msg-second-line">CHECK DETAILS</span></p>
+    </div>
+    
+  
+  </main>
+</body>
+
+</html>
